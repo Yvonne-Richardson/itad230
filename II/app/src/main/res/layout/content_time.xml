@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="lwtech.itad230.ii.TimeActivity"
+    tools:showIn="@layout/activity_time">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DURATION:"
+        android:textSize="20dp"
+        android:id="@+id/lblDuration"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtDuration"
+        android:textSize="20dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginEnd="59dp"
+        android:layout_toRightOf="@+id/lblDuration"
+        android:layout_alignTop="@+id/lblDuration"
+        android:numeric="integer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MESSAGE:"
+        android:id="@+id/lblMessage"
+        android:textSize="20dp"
+
+        android:layout_below="@+id/edtDuration"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtMessage"
+        android:layout_toRightOf="@+id/lblMessage"
+        android:layout_alignTop="@+id/lblMessage"
+        android:layout_below="@+id/edtDuration"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SET TIMER"
+        android:id="@+id/btnSetTimer"
+        android:onClick="btnSetTimer"
+        android:layout_below="@+id/edtMessage"
+        android:layout_alignLeft="@+id/edtMessage"
+        android:layout_alignStart="@+id/edtMessage"/>
+
+
+</RelativeLayout>

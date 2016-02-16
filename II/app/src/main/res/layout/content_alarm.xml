@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="lwtech.itad230.ii.AlarmActivity"
+    tools:showIn="@layout/activity_alarm">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOURS:"
+        android:id="@+id/lblHours"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtHours"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/lblHours"
+        android:layout_alignTop="@+id/lblHours"
+
+        android:numeric="integer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="MINUTES:"
+        android:id="@+id/lblMinutes"
+        android:layout_below="@+id/lblHours"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtMinutes"
+        android:layout_toRightOf="@+id/lblMinutes"
+        android:layout_alignTop="@+id/lblMinutes"
+        android:textSize="20dp"
+        android:numeric="integer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="MESSAGE:"
+        android:id="@+id/lblMessage"
+        android:layout_below="@+id/lblMinutes"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtMessage"
+        android:layout_toRightOf="@+id/lblMessage"
+        android:layout_alignTop="@+id/lblMessage"
+        android:textSize="20dp"
+
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SET ALARM"
+        android:id="@+id/btnSetAlarm"
+        android:onClick="btnSetAlarm"
+        android:layout_below="@+id/edtMessage"
+        android:layout_alignLeft="@+id/edtMinutes"
+        android:layout_alignStart="@+id/edtMinutes" />
+
+
+</RelativeLayout>
